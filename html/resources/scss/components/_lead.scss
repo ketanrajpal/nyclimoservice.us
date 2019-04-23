@@ -1,0 +1,95 @@
+@import "../variables";
+
+section#lead {
+  background-color: map-get($color, 0);
+  div.container {
+    display: grid;
+    h1 {
+      font-weight: 400;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+    div {
+      width: 100%;
+      span {
+        cursor: pointer;
+        background-color: map-get($color, 2);
+        display: block;
+        color: #ffffff;
+        line-height: 40px;
+        text-align: center;
+        padding: 0 20px;
+        i {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 1280px) {
+    div.container {
+      width: 1200px;
+      margin: auto;
+      padding: 40px 0;
+      grid-template-columns: auto 270px;
+      h1 {
+        font-size: 20px;
+        line-height: 38px;
+      }
+      div {
+        span {
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 980px) and (max-width: 1279px) {
+    div.container {
+      width: 950px;
+      margin: auto;
+      padding: 40px 0;
+      grid-template-columns: auto 270px;
+      h1 {
+        font-size: 17px;
+        line-height: 38px;
+      }
+      div {
+        span {
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 736px) and (max-width: 979px) {
+    div.container {
+      h1 {
+        text-align: center;
+        padding: 10px 20px;
+        line-height: 150%;
+      }
+    }
+  }
+
+  @media (min-width: 480px) and (max-width: 735px) {
+    div.container {
+      h1 {
+        text-align: center;
+        padding: 10px 20px;
+        line-height: 150%;
+      }
+    }
+  }
+
+  @media (max-width: 479px) {
+    div.container {
+      h1 {
+        text-align: center;
+        padding: 10px 20px;
+        line-height: 150%;
+      }
+    }
+  }
+}
